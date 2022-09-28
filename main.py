@@ -14,5 +14,5 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 print('Изменить')
 
-
+print(' Ничего не надо изменять')
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

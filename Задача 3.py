@@ -9,5 +9,9 @@ elif c<=a<=b:
     print(c,a,b)
 elif b<=a<=c:
     print(b,a,c)
+elif a<=c<=b:
+    print(a,c,b)
+else:
+    print(c,b,a)
 
 

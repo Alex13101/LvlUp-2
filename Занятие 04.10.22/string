@@ -1,0 +1,7 @@
+my_list=[1,2,3,4]
+print(my_list)
+my_list.append(123)
+my_list.append(True)
+my_list.append("my_string")
+print(my_list)
+print(my_list[3])

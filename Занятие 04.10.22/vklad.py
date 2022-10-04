@@ -1,7 +1,7 @@
 def read_input():
     a = int(input("введите сумму "))
     b = int(input("Введите срок  "))
-    c=int(input("Введите процент "))
+    c=float(input("Введите процент "))
     return a,b,c
 
 def operations(a,b,c):

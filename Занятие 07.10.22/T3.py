@@ -4,11 +4,14 @@
 
 
 
-n=input("Ведите кол-во чисел через пробел: ").split()
-lst=[]
-for i in range (len(n)):
-    lst.append(int(n[i]))
-    lst.count(i)
+# n=input("Ведите кол-во чисел через пробел: ").split()
+# lst=[]
+# for i in range (len(n)):
+#     lst.append(int(n[i]))
+#     lst.count(i)
+
+from utils import read_input
+lst=read_input()
 lst.sort()
 print(lst)
 a=0

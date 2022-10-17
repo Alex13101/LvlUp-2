@@ -47,7 +47,7 @@ def division(a, b):
 
 #print(division(30, 6))
 def sort(lst):
-    if sorted(lst)==lst:
+    if sorted(lst)==lst or reversed(lst)
         print("Список отсортирован")
     else:
         print("Список не отсортирован")

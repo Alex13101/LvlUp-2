@@ -15,13 +15,13 @@
 #     print(" ")
 #     a+=1
 
-
-for i in range (1,11):  """Цикл для форматирования строк"""
-    print(i,end="\t")
-print()
+print(end="\t")
+for i in range (1,11):  #Цикл для форматирования строк"""
+    print(i, end="\t")
+print(" ")
 
 for i in range (1,11):
-    print(i, end="\t")   """Форматирование строк"""
+    print(i, end="\t")  #Форматирование строк"""
     for j in range (1,11):
         print(i*j, end="\t")
     print()

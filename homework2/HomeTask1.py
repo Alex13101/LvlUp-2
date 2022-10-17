@@ -12,23 +12,25 @@ from utils import read_input2
 
 #num = 0
 
-def control():
-    num=True
-    for i in range (len(listing)):
-        if i.isdigit():
-            num=True
-        else:
-            num=False
-
-
-    if not num:
-        print("Не корректный ввод!")
-
-    elif num:
-        print("Числа введены корректно!")
-    return num
-
+#control():
 listing = read_input2()
 print(listing)
-num = control()
+num=True
+for i in range (len(listing)):
+    if int(i):
+        num=True
+    else:
+        num=False
+
+
+if not num:
+    print("Не корректный ввод!")
+
+elif num:
+    print("Числа введены корректно!")
+#return num
+
+
+
+#control()
 

@@ -11,7 +11,7 @@ admin = User("admin", "admin", "admin") # по условиям задачи п�
 # 3
 from utils import is_user_admin, is_user_exists, is_login_correct
 users = [admin]
-
+from utils import save_users, get_users
 while True:
     command = input("введите команду: ")
     if command == "login":
@@ -31,15 +31,15 @@ while True:
         else:
             password = input("Ввведите пароль: ")
             new_user = User(login, password)
-            users.append(new_user)
+            save_users(login, password)
             print("Ok")
     elif command == "all_users":
         login = input("Введите имя пользователя: ")
         password = input("Ввведите пароль: ")
         if is_user_admin(login, password, users):
             for user in users:
-                print(user)
+                print(get_users())
     elif command == "exit":
         break
-    #else:
-        #print(f"{command} не распознана")
+    else:
+        print(f"Команда {command} не распознана")

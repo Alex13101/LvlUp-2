@@ -18,12 +18,12 @@ def create_user(telegram_id, name, email):
     con.commit()
     con.close()
 def is_user_exists(telegram_id):
-    con = sqlite3.connect("create_user")
+    con = sqlite3.connect("create_practice.db")
     cur = con.cursor()
 
     res = cur.execute(
         f"""
-        SELECT * FROM  create_user WHERE telegram_id = {telegram_id};
+        SELECT * FROM  create_practice WHERE telegram_id = {telegram_id};
         """
 
     )

@@ -16,7 +16,7 @@ def register(message):
 def register(message):
     user_id = message.chat.id
     if is_user_exists(user_id):
-        bot.send_message(user_id, 'Ты уже регистрировался! Отправьте мне любое слово, и я найду его значение на Wikipedia')
+        bot.send_message(user_id, 'Ты уже регистрировался! \nОтправьте мне любое слово, и я \nнайду его значение на Wikipedia')
         @bot.message_handler(commands=["searh"])
         def search(m, res=False):
             bot.send_message(m.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
@@ -40,17 +40,17 @@ wikipedia.set_lang("ru")
 def read_email(message, name):
     email = message.text
     if is_email_valid(email):
-        bot.send_message(message.chat.id, f'Спасибо за регистрацию!Отправьте мне любое слово, и я найду его значение на Wikipedia ')
+        bot.send_message(message.chat.id, f'Спасибо за регистрацию! \nОтправьте мне любое слово, и я найду его значение на Wikipedia ')
         create_user(message.chat.id, name, email)
         @bot.message_handler(commands=["searh"])
         def search(m, res=False):
-            bot.send_message(m.chat.id, 'Отправьте мне любое слово, и я найду его значение на Wikipedia')
+            bot.send_message(m.chat.id, 'Отправьте мне любое слово, и я \nнайду его значение на Wikipedia')
             # Получение сообщений от юзера
         @bot.message_handler(content_types=["text"])
         def handle_text(message):
             bot.send_message(message.chat.id, getwiki(message.text))
     else:
-        bot.send_message(message.chat.id, f"Некорректная почта")
+        bot.send_message(message.chat.id, f"Некорректная почта! Нажми /start")
 
 # Чистим текст статьи в Wikipedia и ограничиваем его тысячей символов
 

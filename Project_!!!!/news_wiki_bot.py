@@ -1,7 +1,7 @@
-import telebot, wikipedia, re
+import telebot
 # Импортируем функции создания и проверки пользователя
 from register import is_user_exists, create_user
-from utills import is_email_valid
+from utills import is_email_valid #Импортируем функцию проверки правильности введенной почты
 from utills import getwiki # Импортируем функцию для Википедии
 
 
@@ -34,8 +34,7 @@ def read_name(message):
     bot.send_message(message.chat.id, f"Введи пожалуйста свою почту")
     bot.register_next_step_handler(message, read_email, name)
 
-#Устанавливаем русский язык в википедии
-wikipedia.set_lang("ru") 
+
 
 def read_email(message, name):
     email = message.text

@@ -9,6 +9,8 @@ def is_email_valid(email):
         return False
 
 def getwiki(s):
+    # Устанавливаем русский язык в википедии
+    wikipedia.set_lang("ru")
     try:
         ny = wikipedia.page(s)
         # Получаем первую тысячу символов

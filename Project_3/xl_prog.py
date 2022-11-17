@@ -1,6 +1,7 @@
 import openpyxl
 
 excel_file = openpyxl.load_workbook('skl_b1.xlsx')
+ws.calculate_dimension('skl_b1.xlsx')
 #
 # # sheet names
 # print(excel_file.sheetnames)
@@ -12,7 +13,7 @@ print(type(cell_obj)) # Неизвестный
 print(f'Employees[A1]={cell_obj.value}')
 
 # second way
-print(f'Employees[A1]={sheet_sheet["B1"].value}') # Так же координата
+print(f'Employees[A1]={sheet_sheet["B3"].value}') # Так же координата
 print(f'Total Rows = {sheet_sheet.max_row} and Total Columns = {sheet_sheet.max_column}')
 
 #header_cells_generator = sheet_sheet.iter_rows(max_row=1)  #Функция ITER_ROWS () генерирует ячейки из рабочего листа по строке.

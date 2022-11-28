@@ -7,7 +7,7 @@ from datetime import date
 
 current_date = date.today()
 
-bot = telebot.TeleBot('5766012834:AAHgsslpBBbumdkKCZ_b5X0HsJwc5FBsrH4')  # Токен от bot_father
+bot = telebot.TeleBot('_____________________')  # Токен от bot_father
 excel_file = openpyxl.load_workbook('skl_b1.xlsx')  # Открытие exel-файла
 
 

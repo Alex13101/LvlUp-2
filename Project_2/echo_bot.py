@@ -1,6 +1,6 @@
 import telebot
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5766012834:AAHgsslpBBbumdkKCZ_b5X0HsJwc5FBsrH4')
+bot = telebot.TeleBot('_____________________')
 chanel_name = '@project_chanel'
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])

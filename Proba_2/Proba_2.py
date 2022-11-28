@@ -5,7 +5,7 @@ from utils_for_proba import is_email_valid  # Импортируем функц�
 import time
 
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5766012834:AAHgsslpBBbumdkKCZ_b5X0HsJwc5FBsrH4')  # Токен от bot_father
+bot = telebot.TeleBot('________________________')  # Токен от bot_father
 chanel_name = '@project_chanel'  # Имя кнала Телеграмм куда будем транслировать новости.
 
 

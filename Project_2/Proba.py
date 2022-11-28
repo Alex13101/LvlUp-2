@@ -3,7 +3,7 @@ from telebot import types
 import time
 
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5766012834:AAHgsslpBBbumdkKCZ_b5X0HsJwc5FBsrH4')
+bot = telebot.TeleBot('_____________________________')
 chanel_name = '@project_chanel'
 
 

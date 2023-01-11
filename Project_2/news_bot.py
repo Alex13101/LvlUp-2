@@ -5,7 +5,7 @@ from register import is_user_exists, create_user
 from utils import is_email_valid
 
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5766012834:AAHgsslpBBbumdkKCZ_b5X0HsJwc5FBsrH4') #Токен от bot_father
+bot = telebot.TeleBot('_________________') #Токен от bot_father
 
 @bot.message_handler(commands=['help'])
 def register(message):
